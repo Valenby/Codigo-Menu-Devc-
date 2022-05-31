@@ -54,6 +54,7 @@ int main(){
 	    if(validar==3){
 	    LiquidacionNomina();
 			validar=4;
+
 		}	
 		goto retornar;
 			
@@ -131,36 +132,38 @@ void DatosNomina(){
 }
 
 void LiquidacionNomina(){
-     
+
 	float  HO_total, HN_total,HOE_total,HNE_total,HOFD_total,HOFN_total;
 	float aporte_pension,aporte_salud,salario_hora;
 	aporte_pension= salEmpleado*0.04;
 	aporte_salud= salEmpleado*0.04;
 	salario_hora= salEmpleado/240;  
 	
-	cout<<"El numero de horas diurnas son: "<<HO;
+	cout<<"\nEl numero de horas diurnas son: "<<HO;
 	HO_total = (salario_hora * HO);
-	cout<<"El valor de las horas diurnas es: "<<HO_total;
+	cout<<"\nEl valor de las horas diurnas es: "<<HO_total;
 	
-	cout<<"El numero de horas nocturnas son: "<<HN;
+	cout<<"\nEl numero de horas nocturnas son: "<<HN;
 	HN_total = (salario_hora *HN)*1.35;
-	cout<<"El valor de las horas nocturnas es"<<HN_total;
+	cout<<"\nEl valor de las horas nocturnas es: "<<HN_total;
 	
-	cout<<"El numero de horas diurnas extras son: "<<HOE;
+	cout<<"\nEl numero de horas diurnas extras son: "<<HOE;
 	HOE_total =(salario_hora*HOE)*1.25;
-	cout<<"El valor de las horas diurnas extras es"<<HOE_total;
+	cout<<"\nEl valor de las horas diurnas extras es: "<<HOE_total;
 	
-	cout<<"El numero de las horas nocturas extras son "<<HNE;
+	cout<<"\nEl numero de las horas nocturas extras son "<<HNE;
 	HNE_total = (salario_hora*HNE)*1.75;
-	cout<<"El valor de las horas nocturnas extras es"<<HNE_total;
+	cout<<"\nEl valor de las horas nocturnas extras es: "<<HNE_total;
 	
-	cout<<"El numero de las horas diurnas festivas "<<HN;
+	cout<<"\nEl numero de las horas diurnas festivas "<<HN;
 	HOFD_total = (salario_hora*HOFD)*2.0;
-	cout<<"El valor de las horas diurnas festivas "<<HN_total;
+	cout<<"\nEl valor de las horas diurnas festivas "<<HN_total;
 	
-	cout<<"El numero de las horas nocturnas festivo "<<HOFN;
+	cout<<"\nEl numero de las horas nocturnas festivo "<<HOFN;
 	HOFN_total = (salario_hora*HOFN)*2.5;
-	cout<<"El valor de las horas nocturnas festivo "<<HOFN_total;
+	cout<<"\nEl valor de las horas nocturnas festivo "<<HOFN_total;
+	getch();
+
 }
 
 void Creditos(){
